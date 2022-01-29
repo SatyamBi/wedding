@@ -10202,7 +10202,7 @@ product-design
 }
 @media (max-width: 991px) {
   .color2 .wpo-site-header #navbar {
-    background: #d37f6d;
+    
   }
   .color2 .wpo-site-header #navbar > ul .menu-item-has-children > a:before {
     background: none !important;
@@ -10706,8 +10706,21 @@ product-design
 }
 @media (max-width: 991px) {
   .color4 .wpo-site-header #navbar {
-    background: #dc549d;
-  }
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 0;
+    position: fixed;
+    left: 0px;
+    top: 74px;
+    padding: 17px;
+    text-align: center;
+    background: transparent !important;
+    z-index: 999999;
+    opacity: 1;
+    visibility: visible;
+}
   .color4 .wpo-site-header #navbar > ul .menu-item-has-children > a:before {
     background: none !important;
   }
@@ -12216,8 +12229,24 @@ product-design
 }
 @media (max-width: 991px) {
   .color10 .wpo-site-header #navbar {
-    background: #db5e6b;
+    
   }
+  .wpo-site-header #navbar {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 0;
+    position: absolute;
+    left: 0px;
+    top: 74px;
+    padding: 10px;
+    text-align: center;
+    background: transparent !important;
+    z-index: 999999;
+    opacity: 1;
+    visibility: visible;
+}
   .color10 .wpo-site-header #navbar > ul .menu-item-has-children > a:before {
     background: none !important;
   }

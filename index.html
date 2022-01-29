@@ -52,17 +52,29 @@
                 <nav class="navigation navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <div class="row align-items-center">
-                            <div class="col-lg-2 col-md-6 col-6">
+                            <div class="col-lg-3 col-md-6 col-6">
                                 <div class="navbar-header">
                                     <a class="navbar-brand logo" href="index.html">V<span>i<i class="fa fa-heart" aria-hidden="true"></i>shwakarma Fam<span>i<i class="fa fa-heart" aria-hidden="true"></i>ly</span></a>
+                                    
                                 </div>
+                                
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <h3>
+                                        Mr./Ms. <u id="guest_name"></u> जी आपको सहपरिवार निमंत्रण है। 
+                                    </h3>
+                                </div>
+
                             </div>
                         </div>
                     </div><!-- end of container -->
                 </nav>
             </div>
+            
         </header>
         <!-- end of header -->
+        
         <!-- start of hero -->
         <section class="static-hero">
             <div class="hero-container">
@@ -78,6 +90,7 @@
                                     <div data-swiper-parallax="400" class="slide-text">
                                         <p>We Are Getting Married May 31, 2022</p>
                                     </div>
+                                    
                                     <div class="wpo-wedding-date">
                                         <div class="clock-grids">
                                             <div id="clock"></div>
@@ -428,6 +441,22 @@
     <script src="assets/js/jquery-plugin-collection.js"></script>
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    <script>
+        var guest_name = getUrlVars()["guest_name"];
+        $("#guest_name").html(guest_name.replace("%20"," "));
+        function getUrlVars()
+        {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++)
+            {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+    </script>
 </body>
 
 
