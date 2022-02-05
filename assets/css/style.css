@@ -3502,7 +3502,7 @@ img {
 }
 @media (max-width: 500px) {
   .static-hero {
-    height: 450px;
+    height: 350px;
   }
 }
 .static-hero .wpo-static-hero-inner {
