@@ -5038,7 +5038,10 @@ wpo-hero-slider-s3
 }
 @media (max-width: 575px) {
   .wpo-contact-section .wpo-contact-section-wrapper .vector-2 {
-    display: none;
+    display: block;
+    right: -32%;
+    top: -3%;
+    z-index: 99;
   }
 }
 .wpo-contact-section .wpo-contact-section-wrapper .wpo-contact-form-area {
@@ -10275,6 +10278,7 @@ product-design
 }
 .color3 .wpo-story-section .tab-area .nav-tabs .nav-item .nav-link.active {
   color: #1e8267;
+  border: solid;
 }
 .color3 .wpo-story-section .tab-area .wpo-story-item .wpo-story-content .wpo-story-content-inner span {
   color: #1e8267;
@@ -10455,6 +10459,7 @@ product-design
 @media (max-width: 991px) {
   .color3 .wpo-site-header #navbar {
     background: #1c7a60;
+    top: 58px;
   }
   .color3 .wpo-site-header #navbar > ul .menu-item-has-children > a:before {
     background: none !important;
